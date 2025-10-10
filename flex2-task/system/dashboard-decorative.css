@@ -1,0 +1,124 @@
+.dashboard {
+  width: 520px;
+  padding: 20px;
+  display: flex;
+  font-family: "Tahoma", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #3944af;
+}
+
+.tabs-list {
+  list-style: none;
+  flex-shrink: 0;
+}
+
+.tab {
+  width: 160px;
+}
+
+.tab-link {
+  display: block;
+  padding: 10px;
+  padding-left: 40px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #5F6EEB;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tab-link::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 12px;
+  left: 15px;
+  background-repeat: no-repeat;
+}
+
+.charts::before {
+  background-image: url('../img/chart.svg');
+}
+.clients::before {
+  background-image: url('../img/client.svg');
+}
+.documents::before {
+  background-image: url('../img/document.svg');
+}
+.messages::before {
+  background-image: url('../img/message.svg');
+}
+.projects::before {
+  background-image: url('../img/project.svg');
+}
+.settings::before {
+  background-image: url('../img/settings.svg');
+}
+.trash::before {
+  background-image: url('../img/trash.svg');
+}
+
+.active .tab-link {
+  background-color: #eef0fc;
+  border-radius: 4px 0 0 4px;
+  font-weight: 700;
+  color: #3844AE;
+}
+
+.content {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #eef0fc;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.author {
+  width: 135px;
+  display: flex;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5F6EEB;
+}
+
+.author-avatar {
+  margin-right: 10px;
+}
+
+.message {
+  text-align: center;
+}
+
+.reply-link {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: #606deb;
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
